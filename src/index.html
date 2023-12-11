@@ -4,10 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Silkscreen&family=VT323&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <script src="index.js" type="module"></script>
+  <header>
+    <div class="logo">
+      <img src="imagenes/logo.pgn" alt="logo de la pagina">
+    </div>
+    <div class="titulo">
+     <h1> Diana Analyzer </h1>
+    </div>
+  </header>
+  <div class="contenido">
+  <div class="Contenido1">
+  <p>
+    <h2>
+      <label for="cuadro">Analizador de texto:</label>
+    </h2>
+  </p>
+  <p> Escribe aqui lo que desees y en tiempo real se analizará tu texto, que esperas comienza ya!</p>
+
+   <textarea id="cuadro" name="cuadro" rows="30" cols="80">
+   <!- COMENTARIO –>
+   font-family: 'IBM Plex Mono', monospace;
+   font-family: 'Silkscreen', sans-serif;
+   font-family: 'VT323', monospace;
+   </textarea>
+   <button id="reset-button">Limpiar métricas</button>
+  </div>
+  <div class="contenido2">
+   <ul>
+     <li data-testid="word-count">Caracteres</li>
+     <li data-testid="character-count">Caracteres sin espacio</li>
+     <li data-testid="character-no-spaces-coun">Palabras</li>
+     <li data-testid="number-count">Numeros</li>
+     <li data-testid="number-sum">Suma de numeros</li>
+     <li data-testid="word-length-average">Promedio de longitud de palabra</li>
+   </ul>
+  </div>
+  </div>
+  
+  <footer>
+    <p>Diana Jeniffer Vilchez Quispe</p>
+  </footer>
+  
+
 </body>
 </html>
