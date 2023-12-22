@@ -23,9 +23,18 @@ const analyzer = {
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
     // SI POR EJEMPLO 90 SON 2 NUMEROS O UNO
-    const cantnumeros = text.trim().replace(/[\D/]+g,'').length;         
-    return cantnumeros;
-  },
+    // const cantnumeros = text.replace(/[\D]+/g,'').length;   
+    // Encontrar coincidencias de números en el texto
+  const cantnumeros = text.match(/\d+/g);
+
+  // Contar el número total de números encontrados
+  const contadorNumeros = cantnumeros ? cantnumeros.length : 0;
+
+  // Mostrar el resultado en la consola o en otro lugar según tus necesidades
+  console.log('Números:', contadorNumeros);   
+  return contadorNumeros;  
+    
+},
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     
