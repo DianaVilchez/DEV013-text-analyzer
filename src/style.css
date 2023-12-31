@@ -1,15 +1,15 @@
 
 body{
     margin: 0; /*para que no tenga los margenes automaticos*/
-    display: flex; /*se pone para que el ordenamiento sea flexible(establece el tipo de visualización de los elementos)*/
-    flex-direction: column; /*los elementos se ordenas de arriba a bajo(column)*/
-    min-height: 100vh; 
+    display: flex; /* P1 usando flexbox para que footer este pegado a la parte inferior*/
+    flex-direction: column; /*P1los elementos se ordenas de arriba a bajo(column)*/
+    min-height: 100vh; /*P1 el body ocupe todo el alto posible*/
+    width: 100%;
     
 }
 header{
     display: flex;
     background-color:#7A7DE8;
-    display: flex;
     align-items: center;
 } 
 .logo{
@@ -18,6 +18,12 @@ header{
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.texto{
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 14%;   
+}
+
 h1{
     color:white;
     font-family:'Silkscreen', sans-serif;
@@ -38,13 +44,9 @@ h1{
 .contenido2{
     margin-top:28px;
 }
-.texto{
-    font-family: 'IBM Plex Mono', monospace;
-    margin-left: 42%;
-    transform: translateX(-50%);
-}
-textarea[name="cuadro"]{
-    resize: none;
+
+textarea[name="user-input"]{
+    resize: none ; /*para que el tamaño del textarea no sea editable en web*/
     border-radius: 20px;
     border: 4px solid #3D3D3D;
     background-color:#e4ecf9;
@@ -67,10 +69,8 @@ textarea[name="cuadro"]{
     margin-bottom: 10px;
     color:#3D3D3D;
     font-size: 150%;
-    border-color: #3D3D3D;
     border-radius: 100px;
-    border-style: dashed;
-    border-width: 3.5px;
+    border: 3.5px dashed #3D3D3D;
     box-shadow:0px 3px 4px #3D3D3D;
     font-family: 'VT323', monospace;
     
@@ -79,19 +79,13 @@ textarea[name="cuadro"]{
     background-color:#FF96B2;
 }
 
-.imagen{
-    /* padding: 0; */
-    
+.imagen{  
     max-width: 250px;
     max-height: 250px;
-    position: absolute;
+    position: absolute; 
     top: 499px; /* Ajusta la distancia desde la parte superior según tu diseño */
     right: 20px; /* Ajusta la distancia desde la derecha según tu diseño */
 }
-   
-    
-      
-
 
 footer{
     background-color:#7A7DE8;
@@ -100,8 +94,8 @@ footer{
     padding: 1px;
     padding-right:20px;
     text-align: right;
-    margin-top: auto; /*se pone para que se acomode segun el contenido del body*/
-    margin-bottom:0px;
+    margin-top: auto; /*P1 se pone para que se acomode segun el contenido del body*/
+
 }
 
 
