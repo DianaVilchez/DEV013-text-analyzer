@@ -28,29 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
-
-// QUE LA INFORMACION ESTE EN LA CONSOLA/CONSOLE
-// document.addEventListener("DOMContentLoaded", function () {
-//   const textarea = document.querySelector('[name="user-input"]');
-//   const contadorPalabras = document.querySelector('.metrica[data-testid="word-count"]')
-
-//   textarea.addEventListener("input", function (e) {
-//     console.log(e.target.value)
-//   })
-// });
-
 // CONTEO DE PALABRAS
 // Obtener referencia al área de texto y al elemento de conteo
 const inputTextarea = document.querySelector('[name="user-input"]');
 const contadorPalabras = document.querySelector('.metrica[data-testid="word-count"]');
 
-// Agregar un evento de entrada al área de texto
-inputTextarea.addEventListener("input", function () {
-  // Obtener el valor del texto ingresado
-  const textoIngresado = inputTextarea.value;
 
-  // Obtener el número de palabras y actualizar el contador(no olvidar el analyzer.)
+inputTextarea.addEventListener("input", function () {
+  
+  const textoIngresado = inputTextarea.value;
   const numeroPalabras = analyzer.getWordCount(textoIngresado);
   contadorPalabras.textContent = 'Recuento de palabras:' + numeroPalabras; /*otra forma es con ${numeroPalabras}*/
 });
