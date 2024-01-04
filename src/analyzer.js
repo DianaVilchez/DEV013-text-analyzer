@@ -20,7 +20,7 @@ const analyzer = {
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     
-    const cantDeCaracteres = text.replace(/\s/g, "").length;
+    const cantDeCaracteres = text.replace(/\s/g, "").length;      /*\s : espacios de cualquier tipo*/
     const cantPalabras = analyzer.getWordCount(text); /*para llamar a otra funcion, en este caso debe ir primero analyzer.*/
 
     const promedioPalabras = parseFloat((cantDeCaracteres / cantPalabras).toFixed(2)) ;  /*.toFixed(2)..(numero): este metodo sirve para que solo aparezcan 2 decimales*/
@@ -30,13 +30,12 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    // 
+    
     const cantnumeros = text.match(/\b\d+(\.\d+)?\b/g);  /* match:especifica la coincidencia de una expresión regular con una cadena*/
-    const contadorNumeros = cantnumeros ? cantnumeros.length : 0;      /*?: operador condicional*/
+    const contadorNumeros = cantnumeros.length ;      /*?: operador condicional*/
 
     return contadorNumeros; 
     
-    // const soloNumeros = text.replace(/\D/g, ''); // \D coincide con caracteres que no son dígitos 
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.

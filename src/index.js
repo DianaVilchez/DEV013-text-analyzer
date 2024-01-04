@@ -50,6 +50,7 @@ inputTextarea.addEventListener("input", function () {
   const Caracteres = analyzer.getCharacterCount(textoIngresado);
   contadorCaracteres.textContent = 'Caracteres:' + Caracteres;
 });
+
 // CARACTERES SIN ESPACIOS,SIN SIGNOS DE PUNTUACION
 const contadorCaracteresSin = document.querySelector('.metrica[data-testid="character-no-spaces-count"]');
 
@@ -89,6 +90,24 @@ inputTextarea.addEventListener("input", function () {
   const SumadeNumeros = analyzer.getNumberSum(textoIngresado);
   Sumanumeros.textContent = 'Suma de números:' + SumadeNumeros;
 });
+
+// FORMA DE HACERLO TODO JUNTO Y NO INDIVIDUALMENTE
+// const inputTextarea = document.querySelector('[name="user-input"]');
+// const contadorPalabras = document.querySelector('.metrica[data-testid="word-count"]');
+// const contadorCaracteres = document.querySelector('.metrica[data-testid="character-count"]');
+
+// inputTextarea.addEventListener("input", function () {
+//   const textoIngresado = inputTextarea.value;
+  
+//   const Caracteres = analyzer.getCharacterCount(textoIngresado);
+//   const numeroPalabras = analyzer.getWordCount(textoIngresado);
+//   contadorPalabras.textContent = 'Recuento de palabras:' + numeroPalabras; /*otra forma es con ${numeroPalabras}*/
+//   contadorCaracteres.textContent = 'Caracteres:' + Caracteres;
+// });
+
+
+
+
 
 
 
