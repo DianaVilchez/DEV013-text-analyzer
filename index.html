@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de texto</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Silkscreen&family=VT323&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <script src="index.js" type="module"></script>
+  <header>
+     <img class="logo" src="./imagenes/logo.png" alt="logo de la pagina">
+     <h1> Diana Analyzer </h1>
+  </header>
+  <div class="texto">
+     <p>
+     <h3 >
+      <label for="cuadro">Analizador de texto:</label>
+     </h3>
+     </p>
+     <p> Escribe aqui lo que desees y en tiempo real se analizará tu texto, que esperas comienza ya!</p>
+  </div>
+  <div class="contenido">  
+   <div class="contenido1">
+     <textarea name="user-input" rows="25 " cols="70"></textarea>
+     <button id="reset-button">LIMPIAR MÉTRICAS</button>
+   </div>
+   <div class="contenido2">
+   <ul>
+     <li class="metrica" data-testid="word-count">Recuento de palabras:0</li>
+     <li class="metrica" data-testid="character-count">Caracteres:0</li>
+     <li class="metrica" data-testid="character-no-spaces-count">Caracteres excluyendo espacios y signos de puntuación:0</li>
+     <li class="metrica" data-testid="number-count">Números:0</li>
+     <li class="metrica" data-testid="number-sum">Suma de números:0</li>
+     <li class="metrica" data-testid="word-length-average">Promedio de longitud de palabra:0</li>
+   </ul>
+  </div>
+  </div>
+  
+    <img  class="imagen" src="./imagenes/imgtext.png" alt="imagen decorativa">
+  
+  <footer>
+    <p>Diana Jeniffer Vilchez Quispe</p>
+  </footer>
+  
+
+</body>
+</html>
