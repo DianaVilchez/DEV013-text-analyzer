@@ -6,24 +6,21 @@
 * [2. Preámbulo](#2-preámbulo)
 * [3. Resumen del proyecto](#3-resumen-del-proyecto)
 * [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Pruebas](#7-pruebas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Consideraciones para pedir tu Project Feedback](#9-consideraciones-para-pedir-tu-project-feedback)
-* [10. Objetivos de aprendizaje](#10-objetivos-de-aprendizaje)
-* [11. Funcionalidades opcionales](#11-funcionalidades-opcionales)
+* [5. Diseño](#5-diseño)
+* [6. Boilerplate](#6-boilerplate)
+* [7. Criterios de aceptación mínimos del proyecto](#7-criterios-de-aceptación-mínimos-del-proyecto)
+* [8. Pruebas](#8-pruebas)
+* [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
+* [10. Consideraciones para pedir tu Project Feedback](#10-consideraciones-para-pedir-tu-project-feedback)
+* [11. Objetivos de aprendizaje](#11-objetivos-de-aprendizaje)
+* [12. Funcionalidades opcionales](#12-funcionalidades-opcionales)
 
 ***
 
 ## 1. Consideraciones generales
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 2 a 4 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+* Este proyecto lo resolví de manera individual.
+* El rango de tiempo que me tomo en acabarlo fue de 2 Sprints y 3/4 dias.
 
 ## 2. Preámbulo
 
@@ -52,10 +49,11 @@ obtener una comprensión más profunda de los textos.
 
 ## 3. Resumen del proyecto
 
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda analizar un texto en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
-enviadas como _input_ por ella. Lo harás utilizando HTML, CSS y JavaScript.
+En este proyecto cree una aplicación web que sirve para que los usuarios 
+puedan su un texto en tiempo real y asi obtener una series de indicadores
+y metricas mostrando una serie de indicadores y métricas específicas sobre 
+caracteres, letras, números, etc. Todo esto lo realicé utilizando HTML,
+CSS y JavaScript.
 
 ## 4. Funcionalidades
 
@@ -88,7 +86,27 @@ clic en un botón.
 
 ![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
 
-## 5. Boilerplate
+## 5.Diseño
+
+Para el diseño de esta pagina comencé estructurando la forma y la ubicacion de los elementos 
+dentro del cuerpo pensando en la mejor experiencia para el usuario, quise que las metricas estuvieran a un costado para separar mediante un eje imaginario el texto y los indicadores. Esta pagina fue planteada con 
+la idea de sentir que estas en una maquina de escribir pero algo moderna, robótica y con color 
+, luego  continue con la eleccion de una paleta de colores que vaya a corde con la sensacion 
+divertida y moderna que le quise dar.
+
+![Alt text](image-1.png)
+
+![Alt text](image.png)
+
+***
+
+Este fue el resultado de unir mis ideas, ademas agregue borde ,escogí una fuente que vaya con
+esa sensacion de máquina aunque no encontré la que me imaginaba di con unas fuentes que encajaron con mi idea ,agregue un logo y agregue una imagen en la parte posterior para que hiciera
+contraste con la imagen del logo.
+
+![Alt text](<pag analizador de texto.jpg>)
+
+## 6. Boilerplate
 
 La lógica del proyecto debe estar implementada completamente en JavaScript. En
 este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
@@ -114,6 +132,7 @@ El boilerplate que les damos contiene esta estructura:
 │   ├── index.html
 │   ├── index.js
 │   └── style.css
+|   └── imagenes
 └── test
     ├── .eslintrc
     └── analyzer.spec.js
@@ -121,7 +140,7 @@ El boilerplate que les damos contiene esta estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debes modificarlo para explicar la información necesaria para el
+* `README.md`:Se encuentra la información necesaria para el
   uso de tu aplicación
   web, así como una introducción a la aplicación, su funcionalidad y decisiones
   de diseño que tomaron.
@@ -170,6 +189,8 @@ El boilerplate que les damos contiene esta estructura:
   en la UI (interfaz de usuaria).
 * [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
 pruebas unitarias para los métodos del objeto `analyzer`.
+* [`src/imagenes`](./src/imagenes): este archivo contiene las imagenes que estan
+  adjuntadas en el projecto, como el logo y una imagen complementaria.
 
 ***
 
@@ -183,7 +204,7 @@ En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
 El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
  consultar su [documentación oficial](https://docs.github.com/es/pages).
 
-## 6. Criterios de aceptación mínimos del proyecto
+## 7. Criterios de aceptación mínimos del proyecto
 
 A continuación encontrarás los criterios de aceptación mínimos del proyecto
 relacionados con cada objetivo de aprendizaje.
@@ -192,52 +213,52 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de HTML semántico**
 
-  - [ ] La aplicación tiene un encabezado conformado por un
+  - [x] La aplicación tiene un encabezado conformado por un
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   que es padre de un
   [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)
   con texto `Analizador de texto`. Para que puedas practicar más, estos
   elementos no pueden tener atributos `id`, ni `name`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   con un el atributo `name` en el valor `user-input` para permitir a la usuaria
   ingresar un texto. Para que puedas practicar más, este elemento no puede
   tener atributos `id`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
   con 6 hijos [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li),
   uno para mostrar cada métrica.  Para que puedas practicar más, estos
   elementos no pueden tener atributos `id` ni `name` ni hijos.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar el _recuento de palabras_ debe tener un atributo
   `data-testid` con valor `word-count`.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar el _recuento de caracteres_ debe tener un atributo
   `data-testid` con valor `character-count`.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar el
   _recuento de caracteres excluyendo espacios y signos de puntuación_
   debe tener un atributo
   `data-testid` con valor `character-no-spaces-count`.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar el _recuento de números_ debe tener un atributo
   `data-testid` con valor `number-count`.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar la _suma total de números_ debe tener un atributo
   `data-testid` con valor `number-sum`.
 
-  - [ ] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
+  - [x] El [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   para mostrar la _longitud media de palabras_ debe tener un atributo
   `data-testid` con valor `word-length-average`.
 
-  - [ ] La aplicación tiene un pie de página conformado por un
+  - [x] La aplicación tiene un pie de página conformado por un
   [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
   que es padre de un
   [`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
@@ -245,7 +266,7 @@ relacionados con cada objetivo de aprendizaje.
   Para que puedas practicar más, estos elementos no pueden
   tener atributos `id`, ni `name`, ni `class`.
 
-  - [ ] La aplicación usa un
+  - [x] La aplicación usa un
   [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
   con el atributo `id` en el valor `reset-button` para permitir a la usuaria,
   mediante un clic, limpiar el contenido de la caja de texto.
@@ -254,26 +275,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores de CSS**
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de tipo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors)
   para darle estilo al
   [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
   y al
   [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer).
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de class`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   para darle estilo a los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
   descrito anteriormente.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores de atributo`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
   para darle estilo al
   [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
   usando el atributo `name`.
 
-  - [ ] La aplicación usa
+  - [x] La aplicación usa
   [`selectores CSS de ID`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#id_selectors)
   para darle estilo al
   [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
@@ -281,7 +302,7 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Modelo de caja (box model): border, margen, padding**
 
-  - [ ] Las
+  - [x] Las
   [`clases css`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#class_selectors)
   de los
   [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)
@@ -298,26 +319,26 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de selectores del DOM**
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-  - [ ] La aplicación usa el
+  - [x] La aplicación usa el
   [`selector del DOM getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById).
 
 * **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `input` del `<textarea>` para actualizar las métricas
   cuando se haga escriba en el cuadro de texto.
 
-  - [ ] La aplicación registra un
+  - [x] La aplicación registra un
   [Event Listener](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
   para escuchar el evento `click` del `<button>` que limpia el contenido de la
   caja de texto.
 
 * **Manipulación dinámica del DOM**
-  - [ ] La aplicación actualiza el atributo
+  - [x] La aplicación actualiza el atributo
   [`textContent`](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
   o
   [`innerHTML`](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
@@ -327,11 +348,11 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Tipos de datos primitivos**
 
-  - [ ] La aplicación convierte valores tipo `string` a tipo `number`.
+  - [x] La aplicación convierte valores tipo `string` a tipo `number`.
 
 * **Strings (cadenas de caracteres)**
 
-  - [ ] La aplicación usa métodos para manipular strings como
+  - [x] La aplicación usa métodos para manipular strings como
   [`split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split),
   [`trim`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
   o
@@ -339,53 +360,53 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Variables (declaración, asignación, ámbito)**
 
-  - [ ] La aplicación declara variables con
+  - [x] La aplicación declara variables con
   [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
   y
   [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
 
-  - [ ] La aplicación NO declara variables con  `var`.
+  - [x] La aplicación NO declara variables con  `var`.
 
 * **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`if..else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   para evaluar condiciones.
 
 * **Uso de bucles/ciclos (while, for, for..of)**
 
-  - [ ] La aplicación usa el statement
+  - [x] La aplicación usa el statement
   [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   para crear un bucle.
 
 * **Funciones (params, args, return)**
 
-  - [ ] El objeto `analyzer` contiene un método `getWordCount` para calcular el
+  - [x] El objeto `analyzer` contiene un método `getWordCount` para calcular el
   recuento de palabras de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
+  - [x] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
   el recuento de caracteres de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
+  - [x] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
   para calcular el recuento de caracteres excluyendo espacios y signos de
   puntuación de un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersCount` para contar
+  - [x] El objeto `analyzer` contiene un método `getNumbersCount` para contar
   cúantos números hay en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
+  - [x] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
   longitud media de los números en un texto.
 
-  - [ ] El objeto `analyzer` contiene un método `getAverageWordLength` para
+  - [x] El objeto `analyzer` contiene un método `getAverageWordLength` para
   calcular la longitud media de las palabras en un texto.
 
 * **Pruebas unitarias (unit tests)**
 
-  - [ ] Se pasan todas las pruebas unitarias.
+  - [x] Se pasan todas las pruebas unitarias.
 
 * **Módulos de ECMAScript (ES Modules)**
 
-  - [ ] La aplicación usan
+  - [x] La aplicación usan
   [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
   y
   [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
@@ -393,32 +414,32 @@ relacionados con cada objetivo de aprendizaje.
 
 * **Uso de linter (ESLINT)**
 
-  - [ ] Al ejecutar el linter no se muestran errores de formato y estilo.
+  - [x] Al ejecutar el linter no se muestran errores de formato y estilo.
 
 * **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-  - [ ] En el código se utilizan identificadores descriptivos para variables
+  - [x] En el código se utilizan identificadores descriptivos para variables
   y funciones.
 
 ### Control de Versiones (Git y GitHub)
 
 * **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-  - [ ] La estudiante creó una cuenta en Github.
+  - [x] La estudiante creó una cuenta en Github.
 
-  - [ ] La estudiante configuró su cuenta de Github con una llave SSH.
+  - [x] La estudiante configuró su cuenta de Github con una llave SSH.
 
 * **Git: Control de versiones con git (clone, add, commit, push)**
 
-  - [ ] La estudiante creó un _fork_ para su proyecto.
+  - [x] La estudiante creó un _fork_ para su proyecto.
 
-  - [ ] La estudiante clonó su repositorio usando una llave SSH.
+  - [x] La estudiante clonó su repositorio usando una llave SSH.
 
-  - [ ] La estudiante creó _commits_ y los guardó en Github.
+  - [x] La estudiante creó _commits_ y los guardó en Github.
 
 * **GitHub: Despliegue con GitHub Pages**
 
-  - [ ] La aplicación está desplegada en Github Pages.
+  - [x] La aplicación está desplegada en Github Pages.
 
 ### Centrado en la usuaria
 
@@ -429,15 +450,15 @@ usuarias en el centro**
 
 * **Diseñar en distintos niveles de fidelidad**
 
-  - [ ] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
+  - [x] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
 
 * **Seguir los principios básicos de diseño visual**
 
-  - [ ] Se tuvieron en cuenta las reglas básica del
+  - [x] Se tuvieron en cuenta las reglas básica del
   [diseño visual](https://coda.io/d/Bootcamp-UX-Contenido_dqkqk2rV9Z2/Reglas-basicas-de-diseno-visual_suVcO)
   para diseñar la UI (interfáz gráfica)
 
-## 7. Pruebas
+## 8. Pruebas
 
 Este proyecto cuenta con 3 conjuntos de pruebas que te ayudarán a conocer si
 cumples los criterios mínimos de aceptación.
@@ -454,22 +475,11 @@ Las pruebas unitarias de este proyecto ejecutarán los métodos `getWordCount`,
 `getNumbersSum` y `getAverageWordLength` con diferentes argumentos y se
 confirmará que los valores retornados sean los esperados.
 
-Puedes ejecutar estas pruebas con el comando `npm run test` como se muestra
+Con el comando `npm run test` pude realizar el test y pase con conformidad todo como se muestra
 en la siguiente imagen:
 
-![npm run test](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650584-c8267968-d631-4fbb-b05f-458a970544b7.gif "npm run test")
+![Alt text](image-2.png)
 
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas unitarias cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y
-las [reglas recomendadas (`eslint:recommended`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
 ### Pruebas de criterios mínimos de aceptación
 
@@ -483,18 +493,16 @@ para verificar que cumples con los
 [criterios minimos de aceptacion](#5-objetivos-de-aprendizaje-y-criterios-de-aceptación-mínimos-del-proyecto).
 Cada criterio esta relacionado con un objetivo de aprendizaje.
 
-Puedes ejecutar todas estas pruebas con el comando `npm run test:oas`
+Ejecutamos este el test con este comando `npm run test:oas`
 como se muestra en la siguiente imagen:
 
-![npm run test oas](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650602-f0ca9170-7563-4edc-9e78-874fa012c4fd.gif "npm run test oas")
+![Alt text](image-3.png)
 
-Puedes ejecutar las pruebas de cada grupo de objetivos de aprendizaje de
-manera individual con los siguientes comandos:
+Al realizar el test la carpeta CSS fallo, realicé varios cambios con la intencion de una mejora 
+pero no logre correr ese test, relicé una Office hour y la coach mencinó que aun con ese error
+podria pasar Project feedback.
 
-* `npm run test:oas-html`
-* `npm run test:oas-css`
-* `npm run test:oas-web-api`
-* `npm run test:oas-js`
+![Alt text](image-5.png)
 
 #### Pruebas end-to-end
 
@@ -504,10 +512,10 @@ final. En otras palabras, se prueba el flujo completo del software, simulando
 la interacción de la usuaria con la aplicación, para asegurarse de que todas
 las partes del sistema funcionan correctamente en conjunto.
 
-Puedes ejecutar estas pruebas con el comando `npm run test:e2e` como se muestra
+Con el comando `npm run test:e2e` ejcuté el test y aprobé cada uno de los test como se muestra
 en la siguiente imagen:
 
-![npm run test e2e](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650622-a4da630e-8d39-4dd8-9fde-1a38c31a53e2.gif "npm run test e2e")
+![Alt text](image-4.png)
 
 ### Github actions
 
@@ -522,7 +530,7 @@ como se muestra en la siguiente imagen:
 
 ![Github Action](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650640-a8a8ed26-6f48-4053-8b3b-7dec7e35a9f8.gif "Github Action")
 
-## 8. Pistas, tips y lecturas complementarias
+## 9. Pistas, tips y lecturas complementarias
 
 ### Prepara tu PC para trabajar
 
@@ -559,17 +567,17 @@ ejecuta lo siguiente. Si estas en Windows puedes usar Git Bash:
 
 Súmate al canal de Slack [#project-text-analyzer](https://claseslaboratoria.slack.com/archives/C058GP6K9NY)
 
-## 9. Consideraciones para pedir tu Project Feedback
+## 10. Consideraciones para pedir tu Project Feedback
 
 Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 
-* [ ] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
-* [ ] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
-* [ ] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
-* [ ] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
-* [ ] Está subido a GitHub.
-* [ ] Esta desplegado en GitHub Pages.
-* [ ] Tiene un README con la definición del producto.
+* [x] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
+* [x] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
+* [x] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
+* [x] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
+* [x] Está subido a GitHub.
+* [x] Esta desplegado en GitHub Pages.
+* [x] Tiene un README con la definición del producto.
 
 Recuerda que debes hacer una autoevaluación de _objetivos de aprendizaje_ y
 _life skills_ desde tu dashboard de estudiante.
@@ -577,14 +585,14 @@ _life skills_ desde tu dashboard de estudiante.
 Si no has completado todo lo anterior, no consideramos que estás lista para
 tu sesión de Project Feedback.
 
-## 10. Objetivos de aprendizaje
+## 11. Objetivos de aprendizaje
 
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [x] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 
@@ -594,7 +602,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- [x] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>
 
@@ -602,7 +610,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 </p></details>
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [x] **Modelo de caja (box model): borde, margen, padding**
 
   <details><summary>Links</summary><p>
 
@@ -615,7 +623,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- [x] **Uso de selectores del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -624,7 +632,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
   <details><summary>Links</summary><p>
 
@@ -634,7 +642,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
 </p></details>
 
-- [ ] **Manipulación dinámica del DOM**
+- [x] **Manipulación dinámica del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -648,14 +656,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### JavaScript
 
-- [ ] **Tipos de datos primitivos**
+- [x] **Tipos de datos primitivos**
 
   <details><summary>Links</summary><p>
 
   * [Valores primitivos - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures#valores_primitivos)
 </p></details>
 
-- [ ] **Strings (cadenas de caracteres)**
+- [x] **Strings (cadenas de caracteres)**
 
   <details><summary>Links</summary><p>
 
@@ -663,7 +671,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [String — Cadena de caracteres - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
 </p></details>
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [x] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -671,7 +679,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/basics/variables)
 </p></details>
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
   <details><summary>Links</summary><p>
 
@@ -679,7 +687,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -687,7 +695,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+- [x] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
@@ -697,14 +705,14 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
-- [ ] **Pruebas unitarias (unit tests)**
+- [x] **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
   * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
 </p></details>
 
-- [ ] **Módulos de ECMAScript (ES Modules)**
+- [x] **Módulos de ECMAScript (ES Modules)**
 
   <details><summary>Links</summary><p>
 
@@ -712,19 +720,19 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
 </p></details>
 
-- [ ] **Uso de linter (ESLINT)**
+- [x] **Uso de linter (ESLINT)**
 
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+- [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+- [x] **Git: Instalación y configuración**
 
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Despliegue con GitHub Pages**
+- [x] **GitHub: Despliegue con GitHub Pages**
 
   <details><summary>Links</summary><p>
 
@@ -733,15 +741,15 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Centrado en el usuario
 
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
-- [ ] **Diseñar en distintos niveles de fidelidad**
+- [x] **Diseñar en distintos niveles de fidelidad**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [x] **Seguir los principios básicos de diseño visual**
 
-## 11. Funcionalidades opcionales
+## 12. Funcionalidades opcionales
 
 Si terminaste con todas las [funcionalidades requeridas](#3-funcionalidades),
 intenta implementar las siguientes funcionalidades opcionales para

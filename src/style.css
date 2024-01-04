@@ -74,6 +74,7 @@ textarea[name="user-input"]{
     box-shadow:0px 3px 4px #3D3D3D;
     font-family: 'VT323', monospace;
     
+    
 }
 #reset-button:hover {
     background-color:#FF96B2;
